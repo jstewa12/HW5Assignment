@@ -1,6 +1,21 @@
 <html>
 <head>
+  <title>Joe's Hotdog Stand</title>
 </head>
 <body>
+  <prompt>How many hotdogs do you want?</prompt>
+  x = number of hotdogs
+  x.cost = x * $3.25
+  <prompt>How many fry orders do you want?</prompt>
+  y = number of fry orders
+  y.cost = y * $2.00
+  <prompt>How many sodas do you want?</prompt>
+  z = number of sodas
+  z.cost = z * $1.50
+  subtotal = x.cost + y.cost + z.cost
+  if (subtotal >= $20) subtotal -= (subtotal * 10%)  // Joe's special discount
+  tax = subtotal * 6.25%
+  total = subtotal + tax
+  print(items ordered, quantities, subtotal, discount if applicable, tax, and total
 </body>
 </html>
