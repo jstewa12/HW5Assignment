@@ -16,10 +16,8 @@
     soda_cost = soda_num * 1.50;
     subtotal = hotdog_cost + fry_cost + soda_cost;
     discount_total = 0;
-    discount = subtotal * 0.1;
-    discount_total = subtotal;
-    if (subtotal >= 20)
-      discount_total = subtotal - discount;                     // Joe's special discount
+    subtotal>=20 ? discount=subtotal*0.1 : discount=0;
+    discount_total = subtotal - discount;                      // Joe's special discount
     tax = discount_total * 0.0625;
     total = discount_total + tax;
     document.write("Items Ordered: " + hotdog_num + " hotdogs, " 
