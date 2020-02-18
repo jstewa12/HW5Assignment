@@ -5,9 +5,9 @@
 </head>
 <body>
   <script language="Javascript">
-    hotdog = prompt("How many hotdogs do you want?", "1");       // number of hotdogs
+    hotdog = prompt("How many hotdogs do you want?", "1");     // number of hotdogs
     hotdog_num = parseInt(hotdog);
-    fry = prompt("How many fry orders do you want?", "1");    // number of fry orders
+    fry = prompt("How many fry orders do you want?", "1");     // number of fry orders
     fry_num = parseInt(fry);
     soda = prompt("How many sodas do you want?", "1");         // number of sodas
     soda_num = parseInt(soda);
@@ -16,9 +16,10 @@
     soda_cost = soda_num * 1.50;
     subtotal = hotdog_cost + fry_cost + soda_cost;
     discount_total = 0;
-    if (subtotal >= 20)
+    if (subtotal >= 20) {
       discount = subtotal * 0.1;
-      discount_total = subtotal - discount;                                   // Joe's special discount
+      discount_total = subtotal - discount;                     // Joe's special discount
+    }
     tax = discount_total * 0.0625;
     total = discount_total + tax;
     document.write("Items Ordered: " + hotdog_num + " hotdogs, " 
