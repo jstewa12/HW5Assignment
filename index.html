@@ -5,20 +5,19 @@
 </head>
 <body>
   <script>
-    prompt("How many hotdogs do you want?", "0");
-    prompt("How many fry orders do you want?", "0");
-    prompt("How many sodas do you want?", "0");
+    x = parseInt(prompt("How many hotdogs do you want?", "0"));       // number of hotdogs
+    y = parseInt(prompt("How many fry orders do you want?", "0"));    // number of fry orders
+    z = parseInt(prompt("How many sodas do you want?", "0"));         // number of sodas
+    x_cost = x * 3.25
+    y_cost = y * 2.00
+    z_cost = z * 1.50
+    subtotal = x_cost + y_cost + z_cost
+    if (subtotal >= $20)
+      subtotal -= (subtotal * 0.1);                                   // Joe's special discount
+    tax = subtotal * 0.0625;
+    total = subtotal + tax
+    document.write("x: " x + "\ny: " + y + "\nz: " + z "\n");
   </script>
-  x = number of hotdogs
-  x.cost = x * $3.25
-  y = number of fry orders
-  y.cost = y * $2.00
-  z = number of sodas
-  z.cost = z * $1.50
-  subtotal = x.cost + y.cost + z.cost
-  if (subtotal >= $20) subtotal -= (subtotal * 10%)  // Joe's special discount
-  tax = subtotal * 6.25%
-  total = subtotal + tax
-  print(items ordered, quantities, subtotal, discount if applicable, tax, and total
+  // print(items ordered, quantities, subtotal, discount if applicable, tax, and total
 </body>
 </html>
