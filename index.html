@@ -17,6 +17,7 @@
     subtotal = hotdog_cost + fry_cost + soda_cost;
     discount_total = 0;
     discount = subtotal * 0.1;
+    discount_total = subtotal;
     if (subtotal >= 20)
       discount_total = subtotal - discount;                     // Joe's special discount
     tax = discount_total * 0.0625;
