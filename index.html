@@ -22,6 +22,9 @@
     discount_total = subtotal - discount;                      // Joe's special discount
     tax = discount_total * 0.0625;
     total = discount_total + tax;
+    round(subtotal);
+    round(tax);
+    round(total);
     document.write("# of Hotdogs: " + hotdog_num + " at $3.25 is $" + hotdog_cost);
     document.write("# of Fry Orders: " + fry_num + " at $2.00 is $" + fry_cost);
     document.write("# of Sodas: " + soda_num + " at $1.50 is $" + soda_cost);
