@@ -6,7 +6,7 @@
 <body>
   <h1>WELCOME TO JOE'S HOTDOGS OH MY GOSH HI</h1>
   <h2>YOUR ORDER</h2>
-  <script language="Javascript">
+  <script type="text/javascript">
     hotdog = prompt("How many hotdogs do you want?", "1");     // number of hotdogs
     hotdog_num = parseInt(hotdog);
     fry = prompt("How many fry orders do you want?", "1");     // number of fry orders
@@ -25,13 +25,12 @@
     Math.round(subtotal);
     Math.round(tax);
     Math.round(total);
-    alert("bob\nbob");
     document.write("# of Hotdogs: " + hotdog_num + " at $3.25 is $" + hotdog_cost);
     document.write("# of Fry Orders: " + fry_num + " at $2.00 is $" + fry_cost);
     document.write("# of Sodas: " + soda_num + " at $1.50 is $" + soda_cost);
     subtotal>=20 ? document.write("You qualified for our 10% discount") :
                    document.write("You don't qualify for our 10% discount");
-    document.write("Subtotal: $\n" + subtotal + "\n");
+    document.write("Subtotal: $" + subtotal + "\n");
     document.write("Meals Tax: $" + tax + "\n");
     document.write("Total: $" + total + "\n");
     // print items ordered, quantities, subtotal, discount if applicable, tax, and total
