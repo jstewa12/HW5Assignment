@@ -13,9 +13,7 @@
     fry_cost = fry_num * 2.00;
     soda_cost = soda_num * 1.50;
     subtotal = hotdog_cost + fry_cost + soda_cost;
-    discount_total = 0;
-    subtotal>=20 ? discount=subtotal*0.1 : discount=0;
-    discount_total = subtotal - discount;                      // Joe's special discount
+    subtotal>=20 ? discount_total=subtotal-(subtotal*0.1) : discount_total=subtotal;
     tax = discount_total * 0.0625;
     total = discount_total + tax;
     hotdog_cost = hotdog_cost.toFixed(2);
@@ -24,7 +22,7 @@
     subtotal = subtotal.toFixed(2);
     tax = tax.toFixed(2);
     total = total.toFixed(2);
-    document.write("# of Hotdogs: " + hotdog_num + " at $3.25 is $" + hotdog_cost + "\n");
+    document.write("# of Hotdogs: " + hotdog_num + " at $3.25 is $" + hotdog_cost);
   </script>
   <br />
   <script type="text/javascript">
