@@ -9,11 +9,8 @@
     hotdog_num = parseFloat(prompt("How many hotdogs do you want?", "1"));
     fry_num = parseFloat(prompt("How many fry orders do you want?", "1"));
     soda_num = parseFloat(prompt("How many sodas do you want?", "1"));
-    hotdog_cost = 0.00;
     hotdog_cost = hotdog_num * 3.25;
-    fry_cost = 0.00;
     fry_cost = fry_num * 2.00;
-    soda_cost = 0.00;
     soda_cost = soda_num * 1.50;
     subtotal = hotdog_cost + fry_cost + soda_cost;
     discount_total = 0;
@@ -21,6 +18,9 @@
     discount_total = subtotal - discount;                      // Joe's special discount
     tax = discount_total * 0.0625;
     total = discount_total + tax;
+    hotdog_cost = hotdog_cost.toFixed(2);
+    fry_cost = fry_cost.toFixed(2);
+    soda_cost = soda_cost.toFixed(2);
     subtotal = subtotal.toFixed(2);
     tax = tax.toFixed(2);
     total = total.toFixed(2);
