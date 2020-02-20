@@ -12,8 +12,11 @@
     fry_num = parseFloat(fry);
     soda = prompt("How many sodas do you want?", "1");
     soda_num = parseFloat(soda);
+    hotdog_cost = 0.00;
     hotdog_cost = hotdog_num * 3.25;
+    fry_cost = 0.00;
     fry_cost = fry_num * 2.00;
+    soda_cost = 0.00;
     soda_cost = soda_num * 1.50;
     subtotal = hotdog_cost + fry_cost + soda_cost;
     discount_total = 0;
@@ -32,7 +35,6 @@
   </script>
   <br />
   <script type="text/javascript">
-    soda_cost%1=0 ? zeroes="00" : zeroes="0";
     document.write("# of Sodas: " + soda_num + " at $1.50 is $" + soda_cost);
   </script>
   <br />
