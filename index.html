@@ -13,7 +13,7 @@
     fry_cost = fry_num * 2.00;
     soda_cost = soda_num * 1.50;
     subtotal = hotdog_cost + fry_cost + soda_cost;
-    subtotal>=20 ? discount_total=subtotal-(subtotal*0.1) : discount_total=subtotal;
+    subtotal>=20 ? (discount_total = subtotal * 0.9) : (discount_total=subtotal);
     tax = discount_total * 0.0625;
     total = discount_total + tax;
     hotdog_cost = hotdog_cost.toFixed(2);
